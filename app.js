@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const dot = document.querySelector('.dot-active');
     console.log(dot)
 
-    
     let index = 0
 
     slide[0].style.opacity = 1;
