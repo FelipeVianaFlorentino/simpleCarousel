@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(59, 59, 59);
+    color: antiquewhite;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    
+    position: absolute;
+    display: flex;
+
+    box-shadow: 0 1.75rem 2.25rem 0 rgb(0 0 0 / 0.4);
+    transition: box-shadow 240ms ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 1.75rem 2.25rem 0 rgb(0 0 0 / 0.65);
+}
+
+button:hover span {
+    color: grey;
+    transition: color 250ms ease-in-out;
+}
+
+button#previous {
+    left: 0;
+    transform-origin: center;
+    transform: translateX(-50%);
+}
+
+button#next {
+    right: 0;
+    transform-origin: center;
+    transform: translateX(50%);
+}
+
+button#previous span {
+    transform: translateX(4px);
+}
+button#next span {
+    transform: translateX(1px);
+}
+
+button span {
+    color: antiquewhite;
+}
+
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(41, 41, 41);
+    padding: 2rem;
+    border-radius: 2.5rem;
+    position: relative;
+    max-width: 480px;
+}
+
+.slides {
+    height: 40vh;
+    width: 50vw;
+    background-color: brown;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0;
+}
+
+
+#slide1 {
+    background-image: url(https://picsum.photos/id/237/200/300);
+    z-index: 3;
+}
+
+#slide2 {
+    background-image: url(https://picsum.photos/id/667/200/300);
+    z-index: 2;
+}
+
+#slide3 {
+    background-image: url(https://picsum.photos/id/696/200/300);
+    z-index: 1;
+}
+
+
+.controls {
+    align-self: center;
+}
+
+.dots-wrapper{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    transform-origin: center;
+    margin-bottom: 0.5rem;
+}
+
+.dots {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+
+
+}
+
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100px;
+    background-color: grey;
+}
+
+.dot-active {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100px;
+    background-color: white;
+    position: absolute;
+    transform-origin: left;
+}
+
+.dot.active {
+    background-color: white;
+    transition: background-color 250ms ease-in-out;
+}
+
