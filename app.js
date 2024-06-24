@@ -15,16 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
         switch(index) {
             case 0:
 
-                gsap.to(slide[0], 0.2, {
+                gsap.to(slide[0], 0.5, {
                     opacity: 0
                 });
                 
-                gsap.to(slide[1], 0.2, {
+                gsap.to(slide[1], 0.5, {
                     opacity: 1, 
                 })
 
-                gsap.to(dot, 0.2, {
-                    x: '24px'
+                gsap.to(dot, 0.5, {
+                    x: '24px',
+                    ease: "Power1.easeInOut"
                 })
 
                 index = 1;
@@ -32,16 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
             
             case 1: 
 
-                gsap.to(slide[1], 0.2, {
+                gsap.to(slide[1], 0.5, {
                     opacity: 0
                 })
                 
-                gsap.to(slide[2], 0.2, {
+                gsap.to(slide[2], 0.5, {
                     opacity: 1, 
                 })
 
-                gsap.to(dot, 0.2, {
-                    x: '48px'
+                gsap.to(dot, 0.5, {
+                    x: '48px',
+                    ease: "Power1.easeInOut"
                 })
 
                 index = 2;
@@ -49,16 +51,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
             case 2:
 
-                gsap.to(slide[2], 0.2, {
+                gsap.to(slide[2], 0.5, {
                     opacity: 0
                 })
                 
-                gsap.to(slide[0], 0.2, {
+                gsap.to(slide[0], 0.5, {
                     opacity: 1, 
                 })
 
-                gsap.to(dot, 0.2, {
-                    x: 0
+                gsap.to(dot, 0.5, {
+                    x: 0,
+                    ease: "Power1.easeInOut"
                 })
 
                 index = 0;
@@ -70,16 +73,17 @@ document.addEventListener("DOMContentLoaded", () => {
         switch(index) {
             case 0:
 
-                gsap.to(slide[0], 0.2, {
+                gsap.to(slide[0], 0.5, {
                     opacity: 0
                 })
                 
-                gsap.to(slide[2], 0.2, {
+                gsap.to(slide[2], 0.5, {
                     opacity: 1, 
                 })
 
-                gsap.to(dot, 0.2, {
-                    x: '48px'
+                gsap.to(dot, 0.5, {
+                    x: '48px',
+                    ease: "Power1.easeInOut"
                 })
 
                 index = 2;
@@ -87,16 +91,17 @@ document.addEventListener("DOMContentLoaded", () => {
             
             case 1: 
 
-                gsap.to(slide[1], 0.2, {
+                gsap.to(slide[1], 0.5, {
                     opacity: 0
                 })
                 
-                gsap.to(slide[0], 0.2, {
+                gsap.to(slide[0], 0.5, {
                     opacity: 1, 
                 })
 
-                gsap.to(dot, 0.2, {
-                    x: 0
+                gsap.to(dot, 0.5, {
+                    x: 0,
+                    ease: "Power1.easeInOut"
                 })
 
                 index = 0;
@@ -104,16 +109,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
             case 2:
 
-                gsap.to(slide[2], 0.2, {
+                gsap.to(slide[2], 0.5, {
                     opacity: 0
                 })
                 
-                gsap.to(slide[1], 0.2, {
+                gsap.to(slide[1], 0.5, {
                     opacity: 1, 
                 })
 
-                gsap.to(dot, 0.2, {
-                    x: '24px'
+                gsap.to(dot, 0.5, {
+                    x: '24px',
+                    ease: "Power1.easeInOut"
                 })
 
                 index = 1;
